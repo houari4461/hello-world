@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+
+<html>
+
+
+    <head>
+    
+        <title>Dream land-School </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		
+        <!-- https://fonts.google.com/ google frons -->
+		<link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,900" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,600,600i,700,900" rel="stylesheet">
+
+
+		<!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <!-- font awesome-->
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"> 
+		   
+
+        <link rel="stylesheet" type="text/css" href="css/animate.css">
+               
+
+        <!-- animatio ccs link-->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+
+       	<!-- fav icon-->
+       	<link rel="icon" type="image/png" href="images/favicon.png">
+
+        <!-- clock show time-->
+
+   
+
+             
+    </head>
+    
+    
+    <body>
+    
+       <!-- header-->
+       <header class="header" id="HOME">
+
+
+        <!-- vavigation bar-->
+
+              <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="DL-School-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">
+        <!--smal size logo-->
+        
+        <!--scripte for time-->
+        <div id="MyClockDisplay" class="clock"></div>
+    <script type="text/javascript">
+
+      function showTime(){
+        var date = new Date();
+        var h = date.getHours(); // 0 - 23
+        var m = date.getMinutes(); // 0 - 59
+        var s = date.getSeconds(); // 0 - 59
+        var session = "AM";
+
+        if(h == 0){
+          h = 12;
+        }
+
+        if(h > 12){
+          h = h - 12;
+          session = "PM";
+        }
+
+        h = (h < 10) ? "0" + h : h;
+        m = (m < 10) ? "0" + m : m;
+        s = (s < 10) ? "0" + s : s;
+
+        var time =  h + ":" + m + ":" + s + " " + session ;
+        document.getElementById("MyClockDisplay").innerText = time;
+        document.getElementById("MyClockDisplay").textContent = time;
+
+        setTimeout(showTime, 1000);
+      }
+
+      showTime();
+
+    </script>
+        <img src="images/logo-small.png" alt="logo">
+
+
+      </a>
+    </div>
+
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="loso-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#HOME" class="nav-item">HOME</a></li>
+        <li><a href="#ABOUT" class="nav-item">ABOUT</a></li>
+        <li><a href="#FEATURES" class="nav-item">FEATURES</a></li>
+        <li><a href="#SCREENS" class="nav-item">SCREENS</a></li>
+        <li><a href="#DOWNLOAD" class="nav-item">DOWNLOAD</a></li>
+        <li><a href="#CONTACT" class="nav-item">CONTACT</a></li>
+        
+            
+      </ul>
+      
+      
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+
+
+
+
+       	<div class="header-overlay">
+       		<div class="container header-container">
+       			<div class="row">
+       				<div class="col-md-2">
+       					<div class="admin-pic">
+       						<img src="images/admin-pic.png" alt="admin-pic">
+       					</div>
+       					
+       				</div>
+       				<!--logo-->
+       				<div class="col-md-10">
+       					
+       					<div class="logo text-center">
+       						<img src="images/logo.png" alt="logo">
+       					</div>
+
+       				</div>
+       			</div>
+
+       			<div class="row">
+       					<div class="col-md-8">
+       						<div class="header-text">
+       							<!-- title and descréption-->
+       							<h1> DL-School une étude simple et charme  </h1>
+       							<p>built with great love by WARI-Rms</p>
+       							
+       						</div>
+       						<div class="header-btns">
+       							<!-- header buttons-->
+       							<a class="btn btn-download" href="#"> download </a>
+       							<a class="btn btn-tour" href="#"> Take A Tour <i class="fa fa-angle-down"> </i> </a>
+       							
+       						</div>
+       						
+       					</div>
+
+       					<div class="col-md-4">
+       						<form class="form-style">
+                    <h2>LOGIN</h2>
+  <div class="form-group">
+    <label for="exampleInputEmail1"><i class="fa fa-user" aria-hidden="true"></i> Email address </label>
+    <input type="email" class="form-control" id="exampleInputEmail1" placeholder=" Email ">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1"><i class="fa fa-key" aria-hidden="true"></i> Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div>
+  
+  <div class="checkbox">
+    <label>
+      <input type="checkbox"> Remember me
+    </label>
+  </div>
+  <button type="submit" class="btn btn-default btn-block">Submit</button>
+</form>
+       			</div>
+       			
+       		</div>
+       	</div>
+       	
+       </header>
+
+
+       <!--====about us===-->
+       <section id="ABOUT">
+       		<div class="container">
+       			<div class="row">
+       				<div class="col-md-10 col-md-offset-1">
+       					<!-- about title & description-->
+       					<div class="section-title">
+       						<h2> About us </h2>
+       						<p> descreption   descreption  descreption  descreption  descreption  descreption  descreption  descreption  descreption  descreption  descreption  descreption  descreption  descreption  descreption  descreption  descreption  descreption  descreption  descreption  descreption  descreption  descreption  descreption  descreption  descreption  descreption  descreption  descreption  descreption  descreption  descreption  descreption  descreption  descreption  descreption  descreption  descreption . </p>
+       					
+       				</div>
+       				
+       			</div>
+       			
+
+       		</div>
+       		<div class="choose-us-wraper">
+       			<div class="container">
+       				<div class="row">
+       					<div class="col-md-6">
+       						
+       						<!-- about iPhone-->
+       						<div class="about-iphone">
+       							<img src="images/about-iphone.jpg" alt="iphone">
+       						</div>
+       						
+       					</div>
+       					<div class="col-md-6">
+       						<!-- why choose us title-->
+       						<div class="choose-us-title">
+       							<h2>Why choose us ?</h2>
+       							<p> descreption  descreption  descreption  descreption  descreption  descreption  descreption  descreption  descreption  descreption  descreption  descreption  descreption  descreption  descreption  descreption  descreption  descreption       </p>
+       							
+       						</div>
+       						<!-- why choose us descreption -->
+       						<div class="choose-us-des">
+       							<!-- choose us item 1-->
+       							<div class="choose-us-itm">
+       								<!--choose us item icon -->
+
+       								<div>
+       									<i class="fa fa-bolt"></i>
+       								</div>
+       								<!-- choose us item title & descr&ption -->
+       								<h3> titre numéro 01 </h3>
+       								<p> descreption descreption descreption descreption descreption descreption descreption descreption descreption descreption descreption descreption descreption descreption descreption descreption descreption descreption </p>
+       							</div>
+       							<!-- choose us item 2-->
+       							<div class="choose-us-itm">
+       								<!--choose us item icon -->
+
+       								<div>
+       									<i class="fa fa-bullhorn"></i>
+       								</div>
+       								<!-- choose us item title & descr&ption -->
+       								<h3> titre numero 02 </h3>
+       								<p> descreption descreption descreption descreption descreption descreption descreption descreption descreption descreption descreption descreption descreption descreption descreption descreption descreption descreption </p>
+       							</div>
+
+       							<!-- choose us item 3-->
+       							<div class="choose-us-itm">
+       								<!--choose us item icon -->
+
+       								<div>
+       									<i class="fa fa-flag-o"></i>
+       								</div>
+       								<!-- choose us item title & descr&ption -->
+       								<h3> titre numero 03 </h3>
+       								<p> descreption descreption descreption descreption descreption descreption descreption descreption descreption descreption descreption descreption descreption descreption descreption descreption descreption descreption </p>
+       							</div>
+       							
+       						</div>
+       					</div>
+       					
+       				</div>
+       				
+       			</div>
+       			
+       		</div>
+
+       </section>
+
+       <!-- testimenials-->
+       <section class="testimenial">
+       	<div class="testimenial-overlay">
+       		<div class="container">
+       			<div class="row">
+       				<div class="col-md-12">
+       					<div id="carousel-testimenial" class="carousel slide" data-ride="carousel">
+						  <!-- Indicators -->
+						  <ol class="carousel-indicators">
+						    <li data-target="#carousel-testimenial" data-slide-to="0" class="active"></li>
+						    <li data-target="#carousel-testimenial" data-slide-to="1"></li>
+						    <li data-target="#carousel-testimenial" data-slide-to="2"></li>
+						  </ol>
+
+						  <!-- wraper for slide-->
+
+						  <div class="carousel-inner">
+						  	<!-- item 01-->
+						  	<div class="item active text-center">
+						  		<img src="images/client-01.jpg" alt="testimenial" class="center-block">
+						  		
+						  		<div class="testimenial-caption">
+						  			<h2> HOUARI Remmas</h2>
+						  			<h4> <span>ING.Exploitation,</span> ALGERIA</h4>
+						  			<p> ^^descreption  descreption  descreption  descreption  descreption  descreption  descreption  descreption  descreption  descreption  descreption  descreption  descreption  descreptio^^ </p>
+						  			
+						  		</div>
+						  	</div>
+						  	<!-- item 02-->
+							<div class="item  text-center">
+						  		<img src="images/client-02.jpg" alt="testimenial" class="center-block">
+						  		
+						  		<div class="testimenial-caption">
+						  			<h2> DANIEL JACK SPARO</h2>
+						  			<h4> <span>ING.INSTREMENTATION,</span> ALGERIA</h4>
+						  			<p> ^^descreption  descreption  descreption  descreption  descreption  descreption  descreption  descreption  descreption  descreption  descreption  descreption  descreption  descreptio^^ </p>
+						  			
+						  		</div>
+						  	</div>
+
+						  	<!-- item 03-->
+							<div class="item  text-center">
+						  		<img src="images/client-03.jpg" alt="testimenial" class="center-block">
+						  		
+						  		<div class="testimenial-caption">
+						  			<h2> BOB MARLEY</h2>
+						  			<h4> <span>ING.WEED,</span> ALGERIA</h4>
+						  			<p> ^^descreption  descreption  descreption  descreption  descreption  descreption  descreption  descreption  descreption  descreption  descreption  descreption  descreption  descreptio^^ </p>
+						  			
+						  		</div>
+						  	</div>
+
+
+
+						  </div>
+       					
+       				</div>
+       				
+       			</div>
+       			
+       		</div>
+       	</div>
+       </section>
+
+       <!--==========Features-->
+       <section class="features" id="FEATURES">
+
+       		<div class="container">
+       			<div class="row">
+       				<div class="col-md-10 col-md-offset-1">
+       					<div class="section-title">
+       						<h2>Features</h2>
+       						<p> descreption descreption descreption descreption descreption descreption descreption descreption descreption descreption </p>
+       						      						
+       					</div>
+       					
+       				</div>
+
+
+       			</div>
+       			
+       		</div>
+       		<!--images-->
+       		<div class="features-inner-wrapper">
+       			<div class="container">
+       				<div class="row">
+       					
+       					<div class="col-md-4">
+       						
+       						<!--left feature item 01-->
+       						<div class="left-feature-item">
+       							<!--icon-->
+       							<div class="left-feature-item-icon">
+       								<i class="fa fa-graduation-cap" aria-hidden="true"></i>	
+       							</div>
+       							<!-- feature item descreption-->
+       							<h3>GRADUATION</h3>
+       							<p>descréption descréption descréption descréption descréption descréption </p>
+
+       						</div>
+
+       						<!--left feature item 02-->
+       						<div class="left-feature-item">
+       							<!--icon-->
+       							<div class="left-feature-item-icon">
+       								<i class="fa fa-university" aria-hidden="true"></i>
+       							</div>
+       							<!-- feature item descreption-->
+       							<h3>UNIVERSITY</h3>
+       							<p>descréption descréption descréption descréption descréption descréption </p>
+
+       						</div>
+
+       						<!--left feature item 03-->
+       						<div class="left-feature-item">
+       							<!--icon-->
+       							<div class="left-feature-item-icon">
+       								<i class="fa fa-desktop" aria-hidden="true"></i>
+       							</div>
+       							<!-- feature item descreption-->
+       							<h3>DESKTOP</h3>
+       							<p>descréption descréption descréption descréption descréption descréption </p>
+
+       						</div>
+
+
+       					</div>
+
+       					<div class="col-md-4">
+       							<div class="feature-iphone">
+       								<img src="images/iphone-02.gif">
+       								
+       							</div>
+       					</div>
+
+       					<div class="col-md-4">
+       						<!-- right feature itemes 01  -->
+
+       						 <div class="right-feature-item">
+       						 	<!--icon-->
+       						 	<div class="right-feature-item-icon">
+       						 		<i class="fa fa-tablet" aria-hidden="true"></i>
+       						 		
+       						 	</div>
+       						 	<!-- feature titel & descreption-->
+       						 	<h3> TABLE </h3>
+       						 	<p> descréption descréption descréption descréption descréption descréption   </p>
+       						 	
+       						 </div>
+
+       						 <!-- right feature itemes 02  -->
+
+       						 <div class="right-feature-item">
+       						 	<!--icon-->
+       						 	<div class="right-feature-item-icon">
+       						 		<i class="fa fa-pencil" aria-hidden="true"></i>
+       						 		
+       						 	</div>
+       						 	<!-- feature titel & descreption-->
+       						 	<h3> PENCIL </h3>
+       						 	<p> descréption descréption descréption descréption descréption </p>
+       						 	
+       						 </div>
+       						 <!-- right feature itemes 03  -->
+
+       						 <div class="right-feature-item">
+       						 	<!--icon-->
+       						 	<div class="right-feature-item-icon">
+       						 		<i class="fa fa-book" aria-hidden="true"></i>
+       						 		
+       						 	</div>
+       						 	<!-- feature titel & descreption-->
+       						 	<h3> NOTE-BOOK </h3>
+       						 	<p> descréption descréption descréption descréption descréption descréption descréption  </p>
+       						 	
+       						 </div>
+
+
+       					</div> 
+       					
+       				</div>
+       				
+       			</div>
+       			
+       		</div>
+       	
+
+       </section>
+
+       <!-- PURCHUSE NOW SECTION-->
+
+       <section class="purchase-now">
+       		<div class="container">
+       			<div class="row">
+       				<div class="col-md-9">
+       					<p>descréption descréption descréption descréption descréption descréptiondescréption descréption descréption descréption descréption descréptiondescréption descréption descréption descréption descréption </p>
+       					
+       				</div>
+       				<div class="col-md-3">
+       					<a class="btn btn-primary btn-pruchase-now" href="#"> purchase now</a>
+       				</div>
+       			</div>
+       		</div>
+       	
+       </section>
+
+       <!--screen section-->
+       <section class="screens" id="SCREENS">
+       	<div class="container">
+       		<div class="row">
+       			<div class="col-md-10 col-md-offset-1">
+       				<div class="section-title">
+       					<h2>screens</h2>
+       					<p> descéption descéption descéption descéption descéption descéption descéption descéption descéption descéption descéption descéption descéption descéption descéption descéption descéption descéption descéption descéption </p>
+       					
+       				</div>
+       				
+       			</div>
+       			
+       		</div>
+       		
+       	</div>
+       	<div class="screen-slider">
+       		<div class="carousel">
+       			<div class="item">
+       				<img src="images/screen-01.png" width="60" alt="screen">
+       				
+       			</div>
+       			<div class="item">
+       				<img src="images/screen-02.png" width="60" alt="screen">
+       				
+       			</div>
+       			<div class="item">
+       				<img src="images/screen-03.png" width="60" alt="screen">
+       				
+       			</div>
+       			<div class="item">
+       				<img src="images/screen-04.png" width="60" alt="screen">
+       				
+       			</div>
+       			
+       		</div>
+       		
+       	</div>
+       	
+       </section>
+
+       <!-- counter section-->
+       <section class="counter">
+       		<div class="counter-overlay">
+       			<div class="container">
+       				<div class="row text-center">
+       					<div class="col-md-3">
+       						<div class="counter-item">
+       							<div> <i class="fa fa-cloud-download"></i></div>
+       							<h2> <span class="counter-num"> 4461</span>+<span></span></h2>
+       							<p>Download</p>
+       							
+       						</div>
+       						
+       					</div>
+
+                                          <div class="col-md-3">
+                                                 <div class="counter-item">
+                                                        <div> <i class="fa fa-gift"></i></div>
+                                                        <h2> <span class="counter-num"> 6144</span>+<span></span></h2>
+                                                        <p>Awards</p>
+                                                        
+                                                 </div>
+                                                 
+                                          </div>
+
+
+                                          <div class="col-md-3">
+                                                 <div class="counter-item">
+                                                        <div> <i class="fa fa-heart-o"></i></div>
+                                                        <h2> <span class="counter-num">076</span>+<span></span></h2>
+                                                        <p>Likes</p>
+                                                        
+                                                 </div>
+                                                 
+                                          </div>
+
+                                          <div class="col-md-3">
+                                                 <div class="counter-item">
+                                                        <div> <i class="fa fa-check"></i></div>
+                                                        <h2> <span class="counter-num">1066</span>+<span></span></h2>
+                                                        <p>Recomended</p>
+                                                        
+                                                 </div>
+                                                 
+                                          </div>
+
+       					
+       				</div>
+       				
+       			</div>
+       			
+       		</div>
+       	
+       </section>
+       <!-- download now section-->
+
+       <section class="download-now" id="DOWNLOAD">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+                        <div class="section-title">
+                            <h2> DOWNLOAD NOW</h2>
+                            <p> descréption descréption descréption descréption descréption descréption descréption descréption descréption descréption descréption </p>
+                            
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <div class="container">
+              <div class="row">
+                     <div class="col-md-8 col-md-offset-2">
+                            <img src="images/download-screen.png" alt="download-screen">
+                     </div>
+                     
+              </div>
+                   
+            </div>
+            
+            
+        </section>
+         <!--available aon ios andro win-->
+         <section class="available-on">
+                <div class="container">
+                     <div class="row">
+                            <div class="col-md-6"> 
+                                   <div class="available-title">
+                                         <h2> availabel on </h2>
+                                         <p>descreption descreption descreption descreption descreption descreption descreption descreption descreption </p>
+                                          
+                                   </div>
+                            </div>
+                                   <div class="col-md-6">
+                                          <div class="row">
+                                                 <a href="#">
+                                                        <div class="col-md-4 no-padding">
+                                                               <div class="availabel-on-item">
+                                                                      <i class="fa fa-apple"></i>
+                                                                      <div class="availabel-on-inner">
+                                                                             <h2> IOS</h2>
+                                                                             
+                                                                      </div>
+                                                               </div>
+                                                               
+                                                        </div>
+                                                        <div class="col-md-4 no-padding">
+                                                               <div class="availabel-on-item">
+                                                                      <i class="fa fa-android"></i>
+                                                                      <div class="availabel-on-inner">
+                                                                             <h2> ANDROID</h2>
+                                                                             
+                                                                      </div>
+                                                               </div>
+                                                               
+                                                        </div>
+                                                        <div class="col-md-4 no-padding">
+                                                               <div class="availabel-on-item">
+                                                                      <i class="fa fa-windows"></i>
+                                                                      <div class="availabel-on-inner">
+                                                                             <h2> windows</h2>
+                                                                             
+                                                                      </div>
+                                                               </div>
+                                                               
+                                                        </div>
+
+
+                                                 </a>
+                                                 
+                                          </div>
+                                          
+                                   </div>
+                            
+                     </div>
+                       
+                </div>
+         </section> 
+
+         <!-- contact us-->
+         <section class="contact-us" id="CONTACT">
+              <div class="container">
+                     <div class="row">
+                            <div class="col-md-10 col-md-offset-1">
+                                   <div class="section-title">
+                                          <h2> contact us</h2>
+                                          <p> descreption descreption descreption descreption descreption descreption descreption descreption descreption descreption </p>
+                                          
+                                   </div>
+                                   
+                            </div>
+                            
+                     </div>
+                     
+              </div>
+              <div class="contact-us-form">
+                     <div class="container">
+                            <form role="form">
+                                   <div class="row">
+                                          <div class="col-md-4">
+                                                 <input type="text"  class="form-control" id="name" placeholder="name">
+                                                 <input type="email"  class="form-control" id="email" placeholder="email">
+                                                 <input type="text" class="form-control" id="subject" placeholder="subject">
+                                          </div>
+                                          <div class="col-md-8">
+                                                 <textarea class="form-control" id="message" rows="25" cols="10" placeholder="Message text..."></textarea>
+                                                 <button type="button" class="btn btn-default submit-btn form_submit">send</button>
+                                          </div>
+                                         
+                                          
+                                   </div>
+                                   
+                            </form>
+                            
+                     </div>
+                     
+              </div>
+              <div class="container">
+                     <div class="row">
+                            <div class="col-md-12">
+                                   <div class="social-icons">
+                                          <ul>
+                                                 <li> <a href="#"><i class="fa fa-facebook"></i></a></li>
+                                                 <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                 <li> <a href="#"><i class="fa fa-youtube-play"></i></a></li>
+                                          </ul>
+                                          
+                                   </div>
+                                   
+                            </div>
+                            
+                     </div>
+                     
+              </div>
+
+                
+         </section>
+
+         <footer class="footer">
+              <div class="container">
+                     <div class="row">
+                            <div class="col-md-6">
+                                   <div id="copyright">
+                                          <p>Copyright &copy; 2018 <a href="#"> Dream-land SCHOOL</a></p>
+                                   
+                            </div>
+
+                            
+                     </div>
+                     <div class="col-md-6">
+                            <div class="scroll-top">
+                            <a href="#HOME"> <i class="fa fa-angle-up"></i></a>
+                            </div>
+                     </div>
+                     
+              </div>
+                
+         </footer>
+
+          <!-- wow js  animation scroll-->
+            <script src="js/wow.min.js"></script>
+        <!-- JS -->
+        <script src="js/jquery.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+        <script src="js/custom.js"></script>
+
+
+    </body>
+
+
+</html>
